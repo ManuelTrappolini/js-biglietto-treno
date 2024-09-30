@@ -18,23 +18,22 @@ let price
 kilometers = prompt('Inserisci il numero di chilometri che vuoi percorrere')
 age = prompt('inserisci qui la tua etá')
 price = 0.21  * kilometers
-// console.log(price)
 
 //3 fase di elaborazione dati
 // creo condizioni in base agli sconti applicabili in base all'eta' del passeggero
 
 if (age < 18){
     discountUnder = price - ((price * 20) / 100) 
-    console.log(discountUnder)
-    alert (`il tuo prezzo é di € ${discountUnder}`)
+    console.log(discountUnder.toFixed( 2 ))
+    alert (`il tuo prezzo é di € ${discountUnder.toFixed( 2 )}`)
 }
 else if (age > 65){
     discountOver = price - ((price * 40) / 100)
-    console.log(discountOver);
-    alert (`il tuo prezzo é di € ${discountOver}`)
+    console.log(discountOver.toFixed( 2 ));
+    alert (`il tuo prezzo é di € ${discountOver.toFixed( 2 )}`)
 }
 
 else{
-    console.log(price)
-    alert (`il tuo prezzo é di € ${price}`)
+    console.log(price.toFixed( 2 ))
+    alert (`il tuo prezzo é di € ${price.toFixed( 2 )}`)
 }
