@@ -22,18 +22,21 @@ price = 0.21  * kilometers
 //3 fase di elaborazione dati
 // creo condizioni in base agli sconti applicabili in base all'eta' del passeggero
 
+// se minore di 18 applico sconto del 20% e faccio differenza con il prezzo totale  ossia variabile price
 if (age < 18){
     discountUnder = price - ((price * 20) / 100) 
     console.log(discountUnder.toFixed( 2 ))
-    alert (`il tuo prezzo é di € ${discountUnder.toFixed( 2 )}`)
+    alert (`il prezzo del biglietto é di € ${discountUnder.toFixed( 2 )}`)
 }
+//se maggiore di 65 applico sconto del 40% e faccio differenza con il prezzo totale ossia variabile price
 else if (age > 65){
     discountOver = price - ((price * 40) / 100)
     console.log(discountOver.toFixed( 2 ));
-    alert (`il tuo prezzo é di € ${discountOver.toFixed( 2 )}`)
+    alert (`il prezzo del biglietto é di € ${discountOver.toFixed( 2 )}`)
 }
 
+// se eta compresa tra i 18 e 65 non applico alcuno sconto e si procede con il prezzo intero sul biglietto
 else{
     console.log(price.toFixed( 2 ))
-    alert (`il tuo prezzo é di € ${price.toFixed( 2 )}`)
+    alert (`il prezzo del biglietto é di € ${price.toFixed( 2 )}`)
 }
