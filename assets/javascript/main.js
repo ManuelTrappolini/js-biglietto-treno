@@ -36,4 +36,5 @@ else if (age > 65){
 
 else{
     console.log(price)
+    alert (`il tuo prezzo é di € ${price}`)
 }
