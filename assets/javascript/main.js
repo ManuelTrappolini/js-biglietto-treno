@@ -7,7 +7,7 @@ console.log('ciao');
 //L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 //1 Fase di preparazione
-//Creo veriabili per i chilometri e per eta' passeggero
+//Creo variabili per i chilometri e per eta' passeggero e prezzo intero
 let kilometers
 let age 
 let price
@@ -15,10 +15,10 @@ let price
 //2 Fase di raccoglimento dati
 // creo prompt per richiedere all'utente i chilometri e eta' del passeggero
 
-kilometers = prompt('Inserisci il numero di chilometri che vuoi percorrere')
-age = prompt('inserisci qui la tua etá')
+kilometers = Number(prompt('Inserisci il numero di chilometri che vuoi percorrere'))
+age = Number(prompt('inserisci qui la tua etá'))
 price = 0.21  * kilometers
-
+console.log(kilometers, age, price)
 //3 fase di elaborazione dati
 // creo condizioni in base agli sconti applicabili in base all'eta' del passeggero
 
